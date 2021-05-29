@@ -5,6 +5,10 @@
 	"publisher": "qaqulya",
 	"icon": "resources/images/unlock-icon-12.png",
 	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fuad-ibrahimzade/gist-secretlens-decryptor"
+	},
 	"engines": {
 		"vscode": "^1.56.0"
 	},
