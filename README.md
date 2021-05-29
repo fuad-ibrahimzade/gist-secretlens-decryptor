@@ -13,6 +13,6 @@ Extensions:
     VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=vsls-contrib.gistfs
 
 
-### 0.0.1
+### 0.0.2
 
 Initial release
