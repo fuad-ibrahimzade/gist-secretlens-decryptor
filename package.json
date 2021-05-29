@@ -2,6 +2,8 @@
 	"name": "gist-secretlens-decryptor",
 	"displayName": "Gist-Secretlens-Decryptor",
 	"description": "Decrypt encrypted Gist with Secretlens containing (encrypted) string in filename",
+	"publisher": "qaqulya",
+	"icon": "resources/images/unlock-icon-12.png",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.56.0"
