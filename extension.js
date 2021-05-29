@@ -21,14 +21,20 @@ function activate(context) {
 		if (resourceScheme === 'gist') {
 			let resourceFilePath = editor.document.uri.path
 			// let path = editor.document.uri.path
-			if (filePathRegExp.test(resourceFilePath)) 
-				vscode.commands.executeCommand('secretlens.decrypt')
+			if (filePathRegExp.test(resourceFilePath))
+				vscode.commands.executeCommand('editor.action.selectAll').then(function (value) {
+					vscode.commands.executeCommand('editor.action.insertCursorAtEndOfEachLineSelected').then(function (value) {
+						vscode.commands.executeCommand('secretlens.decrypt').then(function (value) {
+							vscode.commands.executeCommand('editor.action.toggleColumnSelection')
+						})
+					})
+				})
 		}
 	})
 }
 
 // this method is called when your extension is deactivated
-function deactivate() {}
+function deactivate() { }
 
 module.exports = {
 	activate,
